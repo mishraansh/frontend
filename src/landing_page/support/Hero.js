@@ -1,43 +1,49 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 function Hero() {
   return (
     <section className="container-fluid" id="supportHero">
-      <div className="p-3 " id="supportWrapper">
+      <div className="p-3" id="supportWrapper">
         <h4 className="fs-4 mt-2">Support Portal</h4>
-        <a className="mt-2" href="">
-          {" "}
+        <Link className="mt-2" to="/support/tickets">
           Track Tickets
-        </a>
+        </Link>
       </div>
-      <div className="row  p-5 my-3">
-        <div className="col-6 p-3 ">
+
+      <div className="row p-5 my-3">
+        <div className="col-6 p-3">
           <h1 className="fs-4">
             Search for an answer or browse help topics <br /> to create a ticket
           </h1>
+
           <input
             className="mt-3 mb-3"
             placeholder="Eg. how do I activate F&O , why is order getting rejected"
           />
           <br />
-          <a href="">Track account opening</a>
-          <a className="m-2" href="">
-            {" "}
+
+          <Link to="/support/account-opening">Track account opening</Link>
+          <Link className="m-2" to="/support/segment-activation">
             Track Segment activation
-          </a>
-          <a href="">Intraday margin</a>
+          </Link>
+          <Link to="/support/intraday-margin">Intraday margin</Link>
           <br />
-          <a href="">Kite user manual</a>
+          <Link to="/support/kite-manual">Kite user manual</Link>
         </div>
+
         <div className="col-6 p-3">
           <h1 className="fs-3">Featured</h1>
           <ol>
             <li>
-              <a href="">Current Tekeovers and Delisting - January 2024</a>
+              <Link to="/support/takeovers">
+                Current Takeovers and Delisting - January 2024
+              </Link>
             </li>
             <li>
-              <a style={{ lineHeight: 2.5 }} href="">
+              <Link style={{ lineHeight: 2.5 }} to="/support/leverage">
                 Latest Intraday leverage - MIS & CO
-              </a>
+              </Link>
             </li>
           </ol>
         </div>

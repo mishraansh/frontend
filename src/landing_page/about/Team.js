@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 function Team() {
   return (
     <div className="container">
-      <div className="row p-3 mt-5  border-top">
-        <h1 className="text-center"> People</h1>
+      <div className="row p-3 mt-5 border-top">
+        <h1 className="text-center">People</h1>
       </div>
       <div
         className="row p-3 text-muted"
@@ -11,8 +13,9 @@ function Team() {
       >
         <div className="col-6 p-5">
           <img
-            src="media\images\nithinKamath.jpg"
+            src="media/images/nithinKamath.jpg"
             style={{ borderRadius: "100%", width: "70%" }}
+            alt="Nithin Kamath"
           />
           <h4 className="mt-5">Nithin Kamath</h4>
           <h6>Founder, CEO</h6>
@@ -20,31 +23,27 @@ function Team() {
         <div className="col-6 p-5">
           <p>
             Nithin bootstrapped and founded Zerodha in 2010 to overcome the
-            hurdles he faced during his decade long stint as trader.Today,
-            Zerodha has changed the landscape of the Indian borking industuy
+            hurdles he faced during his decade long stint as trader. Today,
+            Zerodha has changed the landscape of the Indian broking industry.
           </p>
           <p>
-            {" "}
-            He is member of the SEBI Secondary Market Adivsory Committee(SMAC)
-            and the Market Data Advisory Committee (MDAC).{" "}
-          </p>{" "}
+            He is member of the SEBI Secondary Market Advisory Committee (SMAC)
+            and the Market Data Advisory Committee (MDAC).
+          </p>
           <p>Playing basketball is his zen.</p>
           <p>
-            Connent on{" "}
-            <a style={{ textDecoration: "none" }} href="">
-              {" "}
+            Connect on{" "}
+            <Link to="/" style={{ textDecoration: "none" }}>
               Homepage
-            </a>{" "}
+            </Link>{" "}
             /{" "}
-            <a style={{ textDecoration: "none" }} href="">
-              {" "}
+            <Link to="/tradingqna" style={{ textDecoration: "none" }}>
               TradingQnA
-            </a>{" "}
+            </Link>{" "}
             /{" "}
-            <a style={{ textDecoration: "none" }} href="">
-              {" "}
+            <Link to="/twitter" style={{ textDecoration: "none" }}>
               Twitter
-            </a>
+            </Link>
           </p>
         </div>
       </div>

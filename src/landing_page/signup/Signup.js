@@ -48,14 +48,14 @@ const Signup = () => {
       return;
     }
 
-    // Success flash
+    
     setFlash({
       show: true,
-      message: "Welcome to Zerodha 🚀",
+      message: "Welcome to Zerodha ",
       type: "success",
     });
 
-    // Redirect after 2 seconds
+   
     setTimeout(() => {
       window.location.href =
         "https://dashboard-sigma-silk-37.vercel.app/holdings";
@@ -71,7 +71,7 @@ const Signup = () => {
               Create Your Zerodha Account
             </h2>
 
-            {/* ✅ FLASH MESSAGE HERE */}
+            
             {flash.show && (
               <div className={`alert alert-${flash.type} text-center`} role="alert">
                 {flash.message}
@@ -80,7 +80,7 @@ const Signup = () => {
 
             <form onSubmit={handleSubmit}>
               <div className="row">
-                {/* --- all your input fields here --- */}
+                
                 <div className="col-md-6 mb-3">
                   <label className="form-label">Full Name</label>
                   <input

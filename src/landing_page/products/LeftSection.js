@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 function LeftSection({
   imageURL,
   productName,
@@ -10,32 +12,56 @@ function LeftSection({
 }) {
   return (
     <div className="container mt-5">
-      <div className="row ">
+      <div className="row">
         <div className="col-6">
-          <img src={imageURL} />
+          <img src={imageURL} alt={productName} />
         </div>
-        
+
         <div className="col-6 p-5 mt-5">
           <h1>{productName}</h1>
           <p>{productDesription}</p>
           <div>
-            <a href={tryDemo} style={{textDecoration:"none"}}>
-              Try Demo <i class="fa-solid fa-arrow-right-long"></i>
-            </a>
-            <a href={learnMore} style={{ marginLeft: "70px",textDecoration:"none" }}>
-              Learn More <i class="fa-solid fa-arrow-right-long"></i>
-            </a>
+            {/* Use Link if internal route, otherwise keep <a> */}
+            {tryDemo.startsWith("/") ? (
+              <Link to={tryDemo} style={{ textDecoration: "none" }}>
+                Try Demo <i className="fa-solid fa-arrow-right-long"></i>
+              </Link>
+            ) : (
+              <a href={tryDemo} style={{ textDecoration: "none" }} target="_blank" rel="noopener noreferrer">
+                Try Demo <i className="fa-solid fa-arrow-right-long"></i>
+              </a>
+            )}
+
+            {learnMore.startsWith("/") ? (
+              <Link
+                to={learnMore}
+                style={{ marginLeft: "70px", textDecoration: "none" }}
+              >
+                Learn More <i className="fa-solid fa-arrow-right-long"></i>
+              </Link>
+            ) : (
+              <a
+                href={learnMore}
+                style={{ marginLeft: "70px", textDecoration: "none" }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Learn More <i className="fa-solid fa-arrow-right-long"></i>
+              </a>
+            )}
           </div>
-          <div className="mt-3 " >
-            <a href={googlePlay}>
-              <img src="media/images/googlePlayBadge.svg" />
+
+          <div className="mt-3">
+            <a href={googlePlay} target="_blank" rel="noopener noreferrer">
+              <img src="media/images/googlePlayBadge.svg" alt="Google Play" />
             </a>
-            <a href={appStore}>
-              {" "}
-              <img
-                src="media/images/appstoreBadge.svg"
-                style={{ marginLeft: "50px" }}
-              />
+            <a
+              href={appStore}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ marginLeft: "50px" }}
+            >
+              <img src="media/images/appstoreBadge.svg" alt="App Store" />
             </a>
           </div>
         </div>

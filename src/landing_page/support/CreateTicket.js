@@ -1,385 +1,122 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 function CreateTicket() {
   return (
     <div className="container">
       <div className="row p-5 mt-5 mb-5">
-        <h1 className="fs-3">To create a ticket , select a relevant topic</h1>
+        <h1 className="fs-3">To create a ticket, select a relevant topic</h1>
 
         <div className="col-4 p-5 mt-2 mb-2">
-          <h4
-            style={{ position: "relative", right: "50px" }}
-            className="fs-5 text-center"
-          >
-            <i class="fa fa-plus-circle"> </i> Account Opening
+          <h4 style={{ position: "relative", right: "50px" }} className="fs-5 text-center">
+            <i className="fa fa-plus-circle"></i> Account Opening
           </h4>
-
           <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
+          <Link style={{ textDecoration: "none", lineHeight: "2.5" }} to="/support/online-account-opening">
             Online Account Opening
-          </a>
+          </Link>
           <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
+          <Link style={{ textDecoration: "none", lineHeight: "2.5" }} to="/support/offline-account-opening">
             Offline Account Opening
-          </a>
+          </Link>
           <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
+          <Link style={{ textDecoration: "none", lineHeight: "2.5" }} to="/support/company-partnership-huf">
             Company, Partnership and HUF Account
-          </a>
+          </Link>
           <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
+          <Link style={{ textDecoration: "none", lineHeight: "2.5" }} to="/support/opening">
             Opening
-          </a>
+          </Link>
           <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
+          <Link style={{ textDecoration: "none", lineHeight: "2.5" }} to="/support/nri-account">
             NRI Account Opening
-          </a>
+          </Link>
           <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
+          <Link style={{ textDecoration: "none", lineHeight: "2.5" }} to="/support/charges">
             Charges at Zerodha
-          </a>
+          </Link>
           <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
+          <Link style={{ textDecoration: "none", lineHeight: "2.5" }} to="/support/idfc-3in1">
             Zerodha IDFC FIRST Bank 3-in-1 Account
-          </a>
+          </Link>
           <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
+          <Link style={{ textDecoration: "none", lineHeight: "2.5" }} to="/support/getting-started">
             Getting Started
-          </a>
+          </Link>
           <br />
         </div>
+
         <div className="col-4 p-5 mt-2 mb-2">
-          <h4
-            style={{ position: "relative", right: "30px" }}
-            className="fs-5 text-center"
-          >
-            <i class="fa-solid fa-circle-user"></i> Your Zerodha Account
+          <h4 style={{ position: "relative", right: "30px" }} className="fs-5 text-center">
+            <i className="fa-solid fa-circle-user"></i> Your Zerodha Account
           </h4>
           <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
+          <Link style={{ textDecoration: "none", lineHeight: "2.5" }} to="/support/login-credentials">
             Login Credentials
-          </a>
+          </Link>
           <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
+          <Link style={{ textDecoration: "none", lineHeight: "2.5" }} to="/support/account-modification">
             Account Modification and Segment Addition
-          </a>
+          </Link>
           <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
+          <Link style={{ textDecoration: "none", lineHeight: "2.5" }} to="/support/dp-bank-details">
             DP ID and bank details
-          </a>
+          </Link>
           <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
+          <Link style={{ textDecoration: "none", lineHeight: "2.5" }} to="/support/profile">
             Your Profile
-          </a>
+          </Link>
           <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
+          <Link style={{ textDecoration: "none", lineHeight: "2.5" }} to="/support/shares-transform">
             Transform and conversion of shares
-          </a>
+          </Link>
           <br />
         </div>
+
         <div className="col-4 p-5 mt-2 mb-2">
-          <h4
-            style={{ position: "relative", right: "30px" }}
-            className="fs-5 text-center"
-          >
-            <i class="fa-solid fa-signal"></i> Your Zerodha Account
+          <h4 style={{ position: "relative", right: "30px" }} className="fs-5 text-center">
+            <i className="fa-solid fa-signal"></i> Your Zerodha Account
           </h4>
           <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
+          <Link style={{ textDecoration: "none", lineHeight: "2.5" }} to="/support/margin-leverage">
             Margin/leverage, Product and Order types
-          </a>
+          </Link>
           <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
+          <Link style={{ textDecoration: "none", lineHeight: "2.5" }} to="/support/kite-web-mobile">
             Kite Web and Mobile
-          </a>
+          </Link>
           <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
+          <Link style={{ textDecoration: "none", lineHeight: "2.5" }} to="/support/trading-faqs">
             Trading FAQs
-          </a>
+          </Link>
           <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
+          <Link style={{ textDecoration: "none", lineHeight: "2.5" }} to="/support/corporate-actions">
             Corporate Actions
-          </a>
+          </Link>
           <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
+          <Link style={{ textDecoration: "none", lineHeight: "2.5" }} to="/support/sentinel">
             Sentinel
-          </a>
+          </Link>
           <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
+          <Link style={{ textDecoration: "none", lineHeight: "2.5" }} to="/support/kite-api">
             Kite API
-          </a>
+          </Link>
           <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
+          <Link style={{ textDecoration: "none", lineHeight: "2.5" }} to="/support/pi-platform">
             Pi and other platform
-          </a>
+          </Link>
           <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
+          <Link style={{ textDecoration: "none", lineHeight: "2.5" }} to="/support/stackerports">
             Stockerports+
-          </a>
+          </Link>
           <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
+          <Link style={{ textDecoration: "none", lineHeight: "2.5" }} to="/support/gtt">
             GTT
-          </a>
+          </Link>
           <br />
         </div>
-        <div className="col-4 p-5 mt-2 mb-2">
-          <h4
-            style={{ position: "relative", right: "90px" }}
-            className="fs-5 text-center"
-          >
-            <i class="fa-solid fa-window-maximize"></i> Funds
-          </h4>
-          <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
-            Adding Funds
-          </a>
-          <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
-            Fund Withdrawal
-          </a>
-          <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
-            eMandates
-          </a>
-          <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
-            Adding Bank Accounts
-          </a>
-          <br />
-        </div>
-        <div className="col-4 p-5 mt-2 mb-2">
-          <h4
-            style={{ position: "relative", right: "90px" }}
-            className="fs-4 text-center"
-          >
-            <i class="fa-solid fa-eye"></i> Console
-          </h4>
-          <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
-            Reports
-          </a>
-          <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
-            Ledger
-          </a>
-          <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
-            Portfolio
-          </a>
-          <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
-            60 Day Challenge
-          </a>
-          <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
-            IPO
-          </a>
-          <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
-            Referral program
-          </a>
-          <br />
-        </div>
-        <div className="col-4 p-5 mt-2 mb-2">
-          <h4
-            style={{ position: "relative", right: "100px" }}
-            className="fs-4 text-center"
-          >
-            <i class="fa-regular fa-circle"></i> Coin
-          </h4>
-          <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
-            Understanding Mutual Funds
-          </a>
-          <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
-            About Coin
-          </a>
-          <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
-            Buying and Selling through Coin
-          </a>
-          <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
-            Starting an SIP
-          </a>
-          <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
-            Managing your Portfolio
-          </a>
-          <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
-            Coin App
-          </a>
-          <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
-            Moving to Coin
-          </a>
-          <br />
-          <a
-            className=""
-            style={{ textDecoration: "none", lineHeight: "2.5" }}
-            href=""
-          >
-            Government Securities
-          </a>
-          <br />
-        </div>
+
+       
       </div>
     </div>
   );
